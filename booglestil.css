@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+/*zvezdica pomeni naj to replicira čisto na vse elemente (margin 0 pomeni, 
+da poresetira vse stile
+	od brskalnika (ker če ne se včasih pojavi bel rob)*/
+
+	/* za osnovo footerja poglej Sticky footer*/
+html, body {
+  height: 100%; /*forsira, da sta html in body vedno 100% visoka*/
+  font-family:  arial, sans-serif; /*v celotnem body je ta pisava*/
+}
+
+.page-wrap { /*page wrap vsebuje vso vsebino razen footerja in ima 100% višino (min-height), zato moraš
+	definirati footer in zato dati margin-bottom minus (-40) to je negativen margin, ki ohrani svojo
+	velikost in naredi "luknjo" torej prostor za footer*/
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -41px; 
+  /*margin je negativen (-) zato da ostane prostor za footer, damo -41 ker je toliko visok naš footer*/
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+/*after pomeni po tem boksu ti še nekaj dodaj ... doda naj pa content""*/
+.site-footer, .page-wrap:after {
+  height: 40px; 
+}
+.site-footer {
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+.site-header, .page-wrap:after {  /*site-header je zgornji menu*/
+	height: 50px;
+}
+
+.site-header {
+	background: none;
+}
+
+/*Header*/
+header ul {
+	margin-top: 20px; /*zgornji rob od pisave linka*/
+	margin-right: 15px; /*odmak črk zgornjega menuja od roba ekrana*/ 
+}
+
+header li {
+	display: inline-block; /*list oz. seznam (li) oz. linke postavi iz navpičnega v vodoravni položaj*/
+}
+
+header a {
+	font-size: small;
+	text-decoration: none;
+	margin-right: 1px; /*razmak med linki v headerju*/
+	color: #272727;
+}
+
+header a:hover {
+	text-decoration: underline;
+
+}
+
+/*Footer*/ 
+footer ul {
+	margin-top: 13px; /*zgornji rob footerja od pisave linka do zg.roba*/
+}
+footer li {
+	display: inline-block; /*list oz. seznam (li) oz. linke postavi iz navpičnega v vodoravni položaj*/
+}
+
+footer a {
+	color: #666;
+	text-decoration: none; /*za linke*/
+	margin-right: 15px; /*razmak med linki v footerju*/
+}
+
+footer a:hover { /*hoover pomeni, ko gremo z miško čez*/
+	text-decoration: underline; /*ko gremo z miško čez da se link podčrta*/
+}
+
+.left {
+	float: left; /*levi meni spodaj*/
+}
+
+.right {
+	float: right; /*desni meni spodaj*/
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+}
+
+.logo {
+	width: 350px; /*350px odmaknjen od desnega roba*/
+	margin: 0 auto; /*element se centrira tako, da se mu da margin 0 in auto*/
+	padding-top: 110px;
+}
+
+.iskalnik {
+	width: 500px; /*500px odmaknjen od desnega roba*/
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.button1 {
+	margin: 0 auto;
+	background: #dcdcdc;
+}
