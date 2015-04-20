@@ -54,7 +54,7 @@ header li {
 header a {
 	font-size: small;
 	text-decoration: none;
-	margin-right: 1px; /*razmak med linki v headerju*/
+	margin-right: 15px; /*razmak med linki v headerju*/
 	color: #272727;
 }
 
@@ -75,6 +75,7 @@ footer a {
 	color: #666;
 	text-decoration: none; /*za linke*/
 	margin-right: 15px; /*razmak med linki v footerju*/
+	font-size: small;
 }
 
 footer a:hover { /*hoover pomeni, ko gremo z miško čez*/
@@ -104,9 +105,25 @@ footer a:hover { /*hoover pomeni, ko gremo z miško čez*/
 	width: 500px; /*500px odmaknjen od desnega roba*/
 	margin: 0 auto;
 	padding-top: 15px;
+	background: transparent;
 }
 
-.button1 {
-	margin: 0 auto;
-	background: #dcdcdc;
+.gumba {
+	height: 100px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius: 5px;
+	line-height: 28px;
+}
+
+.btnprijava {
+	background-color: #4684ec;
+	color: white;
+	text-align: center;
+	margin: auto;
+	border: 1px solid;
+	border-radius: 5px;
+	line-height: 28px;
 }
