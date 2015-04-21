@@ -41,24 +41,24 @@ html, body {
 	background: none;
 }
 
-/*Header*/
-header ul {
+/*zgornja navigacija*/
+.zgnavigacija ul {
 	margin-top: 20px; /*zgornji rob od pisave linka*/
 	margin-right: 15px; /*odmak črk zgornjega menuja od roba ekrana*/ 
 }
 
-header li {
+.zgnavigacija li {
 	display: inline-block; /*list oz. seznam (li) oz. linke postavi iz navpičnega v vodoravni položaj*/
 }
 
-header a {
+.zgnavigacija a {
 	font-size: small;
 	text-decoration: none;
 	margin-right: 15px; /*razmak med linki v headerju*/
 	color: #272727;
 }
 
-header a:hover {
+.zgnavigacija a:hover {
 	text-decoration: underline;
 
 }
@@ -103,19 +103,42 @@ footer a:hover { /*hoover pomeni, ko gremo z miško čez*/
 
 .iskalnik {
 	width: 500px; /*500px odmaknjen od desnega roba*/
+	text-align: center;
 	margin: 0 auto;
 	padding-top: 15px;
 	background: transparent;
 }
 
+.iskanje {
+	font-size: 16px;
+	font-family: arial, sans-serif;
+	background: url(data:image/gif;base64,R0lGODlhEwALAKECAAAAABISEv///////yH5BAEKAAIALAAAAAATAAsAAAIdDI6pZ+suQJyy0ocV3bbm33EcCArmiUYk1qxAUAAAOw==) no-repeat right;
+}
+
 .gumba {
-	height: 100px;
+	text-align: center;
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 20px;
-	border-radius: 5px;
+	padding: 10px;
+	border-radius: 20px;
 	line-height: 28px;
+}
+
+.gumb {
+	color: #444;
+	background-color: #f7f7f7;
+	font-family: arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid;
+	font-weight: bold;
+	border-radius: 2px;
+	padding: 0 8px;
+	text-align: center;
+	margin: 11px 8px;
+	height: 29px;
+	line-height: 27px;
+	border-color: #c6c6c6;
 }
 
 .btnprijava {
@@ -126,4 +149,5 @@ footer a:hover { /*hoover pomeni, ko gremo z miško čez*/
 	border: 1px solid;
 	border-radius: 5px;
 	line-height: 28px;
+	padding: 0 12px;
 }
